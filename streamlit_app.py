@@ -26,11 +26,14 @@ pd_df = my_dataframe.toPandas()
 #st.dataframe(data=my_dataframe, use_container_width=True)
 #st.stop()
 
+st.write('before');
 ingredients_list = st.multiselect('Choose up to 5 ingredients', my_dataframe, max_selections = 5)
+st.write('after');
 
 if ingredients_list:
     #st.write(ingredients_list)
     #st.text(ingredients_list)
+    st.write('lisa')
 
     ingredients_string = ''
     for fruit_chosen in ingredients_list:
