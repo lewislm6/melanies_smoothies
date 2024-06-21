@@ -9,8 +9,6 @@ from snowflake.snowpark.context import get_active_session
 import requests
 import pandas as pd
 
-st.write("HEREHERE>>>>>>>>>>>>>");
-
 # Write directly to the app
 st.title(":cup_with_straw: Customize your Smoothie! :cup_with_straw:")
 st.write("""Choose the fruits you want in your custom smoothie!""")
@@ -27,14 +25,11 @@ pd_df = my_dataframe.toPandas()
 #st.dataframe(data=my_dataframe, use_container_width=True)
 #st.stop()
 
-st.write('before');
 ingredients_list = st.multiselect('Choose up to 5 ingredients', my_dataframe, max_selections = 5)
-st.write('after');
 
 if ingredients_list:
     #st.write(ingredients_list)
     #st.text(ingredients_list)
-    st.write('lisa')
 
     ingredients_string = ''
     for fruit_chosen in ingredients_list:
