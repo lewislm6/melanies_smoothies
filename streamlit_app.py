@@ -9,6 +9,7 @@ from snowflake.snowpark.context import get_active_session
 import requests
 import pandas as pd
 
+st.write("HEREHERE>>>>>>>>>>>>>");
 
 # Write directly to the app
 st.title(":cup_with_straw: Customize your Smoothie! :cup_with_straw:")
